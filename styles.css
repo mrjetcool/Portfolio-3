@@ -1,0 +1,380 @@
+/* Style for the navigation bar */
+.navbar {
+    font-family: 'Nexa', sans-serif; /* Use Nexa font for text */
+    background-color:#ACB1D6;
+    font-size: 1.2rem; /* Set font size */
+    letter-spacing: 1px; /* Add letter spacing */
+  }
+  
+  /* Style for the brand name */
+  .navbar-brand {
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Add font weight */
+    color: black;
+  }
+  
+  /* Style for the navbar links */
+  .navbar-nav .nav-link {
+    color: #fff; /* Set text color to white */
+    margin-right: 1rem; /* Add right margin */
+    transition: opacity 0.5s ease;
+  }
+  .navbar-nav .nav-link:hover {
+    opacity: 0.7; /* Fade out the link on hover */
+  }
+  
+  
+  /* Style for the active link */
+  .navbar-nav .nav-item.active .nav-link {
+    font-weight: bold; /* Add font weight */
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  #about {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+  }
+  
+  #about h2 {
+    font-family: 'Nexa', sans-serif;
+    font-size: 2.5rem; /* Set font size */
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  #about hr {
+    border-color: #8e8e8e;
+    margin-bottom: 50px;
+  }
+  
+  #about p {
+    font-family: 'Nexa', sans-serif;
+    font-size: 1.2rem; /* Set font size */
+    letter-spacing: 1px; /* Add letter spacing */
+    line-height: 1.8;
+  }
+  #about img {
+    border-radius: 100%; /* Make the image round */
+    max-width: 200px; /* Set a maximum width */
+    height: auto; /* Set height to auto for proportional scaling */
+  }
+
+  #services {
+    background-color: #343a40; /* Set background color */
+    padding: 50px 0; /* Add top and bottom padding */
+  }
+  
+  #services h2 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 30px; /* Add bottom margin */
+    color: #F9D949;
+  }
+  
+  #services hr {
+    margin-top: 30px; /* Add top margin */
+    margin-bottom: 30px; /* Add bottom margin */
+  }
+  
+  .card {
+    border: none; /* Remove the border from the card */
+  }
+  
+  .card-title {
+    font-weight: bold; /* Add font weight to the card title */
+    margin-bottom: 10px; /* Add bottom margin to the card title */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Set font size for the card text */
+    line-height: 1.5; /* Set line height for the card text */
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Add box shadow on card hover */
+  }
+  
+  .card:hover .card-title {
+    color: #F9D949; /* Change card title color on card hover */
+  }
+  
+  .card:hover .card-text {
+    color: #333; /* Change card text color on card hover */
+  }
+  
+  #services h5,
+  #services p {
+    font-family: 'Nexa', sans-serif;
+  }
+  
+  #services h5 {
+    font-size: 1.5rem; /* Set font size */
+    margin-bottom: 0.5rem; /* Add bottom margin */
+  }
+  
+  #services p {
+    font-size: 1.2rem; /* Set font size */
+    margin-bottom: 1rem; /* Add bottom margin */
+  }
+
+  .skills-section {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+  }
+  
+  .skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .skill-box {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+    margin-top: 10px;
+  }
+  
+  .skill-box:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .skill-box h3 {
+    margin-top: 0;
+  }
+  
+  .skill-box p {
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Icon */
+  .skill-box i {
+    font-size: 4rem;
+    color: #f28a1d;
+    margin-bottom: 2rem;
+  }
+  
+  /* Flip Card Inner */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  #projects {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  #projects h2 {
+    text-align: center;
+    font-family: 'Nexa', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  #projects hr {
+    width: 80px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #007bff;
+    border: none;
+    margin-bottom: 60px;
+  }
+  
+  #projects .card {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+  }
+  
+  #projects .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  #projects .card-title {
+    font-family: 'Nexa', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  #projects .card-text {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  #projects .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-family: 'Nexa', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+  }
+  
+  #projects .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.contact-parent{
+    background: #fff;
+    display:flex;
+    margin:80px 0;
+}
+
+.contact-child{
+    display:flex;
+    flex:1;
+    box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
+}
+
+.child1{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:#fff;
+    padding:100px 0;
+}
+
+.child1 p{
+    padding-left:20%;
+    font-size:20px;
+    text-shadow:0px 0px 2px #000;
+}
+
+.child1 p span{
+    font-size:16px;
+    color:#9df2fd;
+}
+
+.child2{
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.inside-contact{
+    width:90%;
+    margin:0 auto;
+}
+
+.inside-contact h2{
+    text-transform:uppercase;
+    text-align:center;
+    margin-top:50px;
+}
+
+.inside-contact h3{
+    text-align:center;
+    font-size:16px;
+    color:#0085e2;
+}
+
+.inside-contact input, .inside-contact textarea{
+    width:100%;
+    background-color:#eee;
+    border:1px solid rgba(0,0,0,0.48);
+    padding:5px 10px;
+    margin-bottom:20px;
+}
+
+.inside-contact input[type=submit]{
+    background-color:#000;
+    color:#fff;
+    transition:0.2s;
+    border:2px solid #000;
+    margin:30px 0;
+}
+
+.inside-contact input[type=submit]:hover{
+    background-color:#fff;
+    color:#000;
+    transition:0.2s;
+}
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.fa-linkedin, .fa-twitter, .fa-instagram {
+  font-size: 24px;
+}
+
+
+/* Nav bar media queries */
+
+
+  
